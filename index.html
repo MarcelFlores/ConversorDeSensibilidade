@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Conversor de Sensibilidade</title>
+    <link rel="icon" type="image/x-icon" href="./favicon-16x16.png">
+  </head>
+  <body>
+    <header id="cabecao">
+      <h1 class="cabecalho">CONVERSOR DE SENSIBILIDADE</h1>
+      <img class="Logo" src="./logoval.png" alt="" />
+      <img class="x" src="./x-white.png" alt="">
+      <img class="Logo2" src="./logocs.png" alt="" />
+    </header>
+    <div class="flutuantes">
+      <div class="container2">
+        <h1 class="titulo">VALORANT PARA CS:GO</h1>
+
+        <p class="jogo">Valorant</p>
+
+        <input
+          id="sensVal"
+          type="number"
+          name="sensibilidadeValorant"
+          placeholder="0.0"
+          step="2"
+        />
+
+        <br />
+
+        <input
+          onclick="calcularValCs()"
+          type="submit"
+          name="calcular"
+          class="calcBTN"
+        />
+        <hr />
+
+        <p class="jogo2">Counter Strike:Global Offensive</p>
+        <p id="resposta1">.</p>
+      </div>
+
+      <div class="container2">
+        <h1 class="titulo">CS:GO PARA VALORANT</h1>
+
+        <p class="jogo">Counter Strike:Global Offensive</p>
+
+        <input
+          id="sensCs"
+          type="number"
+          name="sensibilidadeCS"
+          placeholder="0.0"
+        />
+
+        <br />
+
+        <input
+          onclick="calcularCsVal()"
+          type="submit"
+          name="calcular"
+          class="calcBTN"
+        />
+        <hr />
+        <p class="jogo2">Valorant</p>
+        <p id="resposta2">.</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
